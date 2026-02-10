@@ -1,9 +1,6 @@
 /* responsive media query */
 @media  screen and (max-width:576px) {
-    .nav-links{
-        display: none;
-    }
-    .my-btn{
+    .nav-links, .my-btn{
         display: none;
     }
     .hamberger{
@@ -12,11 +9,51 @@
     .hamberger img{
         width: 24px;
         height: 24px;
-        display: block;
     }
     .navbar{
         display: flex;
-        padding: 16px 20px;
+        padding: 16px 20px; 
     } 
-      
+    .banner-section {
+        background-size: 100% 100%;
+        background-position: center ;
+        
+        width: 100%;
+        height: 466px;
+        padding-top: 40px;
+    }
+    .banner-section .rounded-mic-parent{
+        width: 200px;
+        height:200px;
+        margin: auto;
+        margin-bottom: 24px;  
+    }
+    .banner-section .rounded-mic-parent .rounded-shape{
+        width: 100%;
+        height: auto;
+    }
+    .banner-section .rounded-mic-parent .mic{
+        width: 46px;
+        height: 70px;   
+    }
+    .banner-section .rounded-mic-parent span{
+        top: 10%;
+        left: 75%;
+        font-size: 0.9rem;
+    }
+    .banner-content{
+    h1{
+        font-size: 2rem;
+    }
+    p{
+        font-size: 1rem;
+        width: 100%;
+        max-width: 400px;
+    } 
+    .btn-primary{
+        margin: 0 auto;
+        width: 100%;
+        gap: 8px;
+    }     
+}
 }

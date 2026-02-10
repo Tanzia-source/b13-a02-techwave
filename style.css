@@ -19,7 +19,7 @@ body{
     align-items: center;
     justify-content: space-between;
     background-color: #1A0B2E;
-    border-bottom: solid rgba(65, 37, 103, 1);
+    border-bottom:  1px solid rgba(65, 37, 103, 1);
 }
 .navbar img{
     width: 219px;
@@ -50,17 +50,112 @@ body{
 }
 .hamberger{
     display:none;
-    height: 24px;
-    width: 24px; 
+    /* height: 24px;
+    width: 24px;  */
 }
 
 /* navbar ends here */
 
 /* banner section starts here */
+.banner-section{
+    width: 100%;
+    
+    background-image: url(./assets/hero-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+    height: 760px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner-section .rounded-mic-parent{
+    margin-bottom: 40px;
+    position: relative;
 
+}
+.banner-section .rounded-mic-parent .rounded-shape{
+    width: 350px;
+    height: auto;
+}
+.banner-section .rounded-mic-parent .mic{
+    width: 120px;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: micro-phone 3s ease-in-out 1s infinite  ;
+}
+@keyframes micro-phone {
+    0%{
+        transform:translate(-50%, -50%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%, -50%) rotate(-360deg);
+    } 
+}
+.banner-section .rounded-mic-parent span{
+    background-color: #00FF88;
+    color: black;
+    font-weight: 700;
+    padding: 8px 16px;
+    border-radius: 20px;
+    display: inline-block;
+    position: absolute;
+    left: 257px;
+    top: 15px;
+}
+.banner-content{
+    text-align: center;  
+}
+.banner-title{
+    font-size: 3.75rem;
+    font-weight: 800;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}
+.text-description{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+.btn-primary{
+    gap: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
+}
 
+.listen{
+    background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1)));;
+    width: 201px;
+    height: 44px;
+    border: none;
+    color: #FFFFFF;
+    border-radius: 10000px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
 
-
+}
+.subscribe{
+    width: 147px;
+    height: 44px;
+    /* padding: 20px 12px; */
+    border-radius: 10000px;
+    background: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    border: 1px solid #00FF88;
+    color: #00FF88;
+}
 
 
 /* banner section ends here */
