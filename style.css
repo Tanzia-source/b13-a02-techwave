@@ -58,7 +58,6 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center ;
-    /* height: 760px; */
     height: auto;
     display: flex;
     flex-direction: column;
@@ -157,8 +156,8 @@ body{
 .about-section{
     background-color:#19092f ;
     color: #FFFFFF;
-    /* height: 646px; */
     height: auto;
+    width: 100%;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -198,16 +197,13 @@ hr{
 }
 .podcust-card-container > div {
     text-align: center;
-    width: 100%;
-    /* padding: 80px 120px; */
-    /* margin-bottom: 0; */
+    width: 100%;   
 }
 .podcust-card h3{
     font-size: 3rem;
     font-weight: 700;
     color: #00FF88;
     margin-bottom: 16px;
-    /* width: 100%; */
 }
 .podcust-card h5{
     font-size: 1rem;
@@ -219,6 +215,7 @@ hr{
     background-color: #230E3D;
     color: #FFFFFF;
     height: auto;
+    width: 100%;
     padding-bottom: 120px;
 }
 .techwave-heading{
@@ -279,13 +276,16 @@ hr{
 .featured-section{
     background-color: #1A0B2E;
     height: auto;
+    width: 100%;
     color: #FFFFFF; 
     text-align: center; 
+    overflow: hidden;
 }
 .section-title{
     font-size: 3rem;
     font-weight: 700;
     padding-top: 120px;
+    
 }
 .episode{
     display: grid;
@@ -338,18 +338,17 @@ hr{
     height: auto;
     background: #29104a;
     text-align: left;
-    border-radius: 20px;
+    border-radius: 30px;
+    margin-bottom: 120px;
 }
 .host-title{
     font-size: 2rem;
     font-weight: 600;
     margin-top: 120px;
     margin-bottom: 40px;
-
 }
 .host-image img{
     padding: 40px;
-
 }
 .host-description h3{
     font-size: 2rem;
@@ -359,6 +358,7 @@ hr{
 .host-description p{
     font-size: 1rem;
     font-weight: 400;
+    line-height: 1.5;
     color: #c1b4b4;
     margin-bottom: 16px;
 }
@@ -374,11 +374,35 @@ hr{
     height: 45px;
     gap: 20px;
     border: 1px solid #979090;
-    text-decoration: none;
-    border-radius: 50%;   
+    border-radius: 50%;
 }
-
-
-
-
 /* featured section end here */
+/* footer section starts here */
+.footer-section{
+    background-image:url(./assets/footer-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 120px 120px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #ad9999;
+}
+.footer-logo{
+    width: 410px;
+    height: 60px;
+    margin-bottom: 24px;
+}
+.footer-links{
+    display: flex;
+    gap: 42px;
+}
+.footer-app{
+    display: inline-flex;
+    gap: 10px;
+    margin-bottom: 24px;
+}
+/* footer section ends here */
